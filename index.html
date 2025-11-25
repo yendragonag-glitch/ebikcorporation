@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Премиальный бизнес-лендинг</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Иконки (поиск, соцсети, иконки блоков) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Фиксированный хедер -->
+    <header class="main-header">
+      <div class="container header-inner">
+        <div class="logo">Ёbik Corporation</div>
+
+        <nav class="main-nav">
+          <a href="#home" class="nav-link active">Главная</a>
+          <a href="#about" class="nav-link">О клинике</a>
+          <a href="#services" class="nav-link">Услуги</a>
+          <a href="#contact" class="nav-link">Контакты</a>
+        </nav>
+
+        <button class="search-btn" aria-label="Поиск">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Бургер для мобильного -->
+        <button class="burger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Вертикальные соцсети справа -->
+    <div class="social-bar">
+      <a href="#" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-content reveal">
+            <p class="hero-kicker">Премиальная медицина и диагностика</p>
+            <h1>
+              Медицинский центр<br>
+              для тех, кто ценит здоровье
+            </h1>
+            <p class="hero-text">
+              Мы помогаем пациентам премиум-сегмента получать комплексную медицинскую помощь:
+              от первой консультации до полного восстановления.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#about" class="btn btn-primary" data-scroll="#about">
+                Подробнее
+              </a>
+              <a href="#contact" class="btn btn-outline" data-scroll="#contact">
+                Связаться
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image reveal">
+            <div class="hero-image-frame">
+              <!-- Фото основателя -->
+              <img src="images/VOVK.jpg" alt="Вовк Иван Игоревич">
+            </div>
+            <div class="hero-person-info">
+              <p class="hero-person-name">Вовк Иван Игоревич</p>
+              <p class="hero-person-role">
+                Основатель и управляющий корпорации EBIK
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>О клинике</h2>
+            <p>
+              Мы создаём индивидуальные программы диагностики и лечения для людей,
+              которые ценят профессионализм, конфиденциальность и результат.
+              От первого обращения до контроля состояния — всё в единой медицинской системе клиники.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="info-card reveal">
+              <div class="icon-circle">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <h3>Стратегия лечения</h3>
+              <p>
+                Изучаем историю болезни и образ жизни, формируем персональный план обследований
+                и шаги лечения, выстраиваем удобный маршрут пациента по специалистам.
+              </p>
+            </article>
+
+            <article class="info-card reveal">
+              <div class="icon-circle">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <h3>Диагностика</h3>
+              <p>
+                Проводим расширенные лабораторные и инструментальные исследования
+                на современном оборудовании экспертного класса, чтобы не упустить ни одной детали.
+              </p>
+            </article>
+
+            <article class="info-card reveal">
+              <div class="icon-circle">
+                <i class="fa-solid fa-hospital-user"></i>
+              </div>
+              <h3>Технологии и комфорт</h3>
+              <p>
+                Цифровая карта пациента, телемедицина, минимально инвазивные методики,
+                продуманные интерьеры и заботливый персонал — чтобы лечение было безопасным,
+                эффективным и максимально комфортным.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="section team">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Команда клиники</h2>
+            <p>
+              В основе корпорации EBIK — врачи и руководители, объединённые одной целью:
+              обеспечить пациентам высокий уровень медицинской помощи и сервиса.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <article class="info-card team-card reveal">
+              <div class="team-photo">
+                <img src="images/VOVK.jpg" alt="Вовк Иван Игоревич">
+              </div>
+              <h3>Вовк Иван Игоревич</h3>
+              <p class="team-role">Основатель и управляющий корпорации EBIK</p>
+              <p>
+                Харизматичный лидер, определяющий стратегию развития компании,
+                внедрение инновационных медицинских технологий и высокий уровень сервиса
+                во всех подразделениях.
+              </p>
+            </article>
+
+            <article class="info-card team-card reveal">
+              <div class="team-photo">
+                <img src="images/VOI.jpg" alt="Директор по сервису и комфорту пациентов">
+              </div>
+              <h3>Войтенко Александра Артемовна</h3>
+              <p class="team-role">Директор по сервису и комфорту пациентов</p>
+              <p>
+                Доброжелательный куратор программ досуга и психологической поддержки,
+                делает пребывание в клинике максимально уютным и человеческим.
+              </p>
+            </article>
+
+            <article class="info-card team-card reveal">
+              <div class="team-photo">
+                <img src="images/KIS.jpg" alt="Директор медицинского департамента">
+              </div>
+              <h3>Кисилев Николай Валерьевич</h3>
+              <p class="team-role">Директор медицинского департамента</p>
+              <p>
+                Строгий и собранный руководитель, организует работу врачебных команд
+                и следит за соблюдением всех стандартов безопасности и эффективности лечения.
+              </p>
+            </article>
+
+            <article class="info-card team-card reveal">
+              <div class="team-photo">
+                <img src="images/GON.jpg" alt="Руководитель отдела клинических решений">
+              </div>
+              <h3>Гончаренко Андрей Михайлович</h3>
+              <p class="team-role">Руководитель отдела клинических решений</p>
+              <p>
+                Спокойный и внимательный к деталям специалист, отвечает за разработку
+                современных протоколов лечения и контроль качества медицинской помощи.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section services">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Услуги</h2>
+            <p>
+              Собираем комплексное медицинское решение вокруг задач вашего здоровья —
+              от чек-ап программ до специализированного лечения и долговременного наблюдения.
+            </p>
+          </div>
+
+          <div class="cards-grid services-grid">
+            <article class="service-card reveal">
+              <h3>Комплексный чек-ап «под ключ»</h3>
+              <p>
+                Полный цикл: первичная консультация, лабораторная и инструментальная диагностика,
+                консультации профильных специалистов, персональные рекомендации по лечению
+                и образу жизни.
+              </p>
+              <ul>
+                <li>Индивидуальные программы наблюдения</li>
+                <li>Персональный план терапии</li>
+                <li>Контрольные визиты и коррекция лечения</li>
+                <li>Поддержка врача-координатора</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal">
+              <h3>Редизайн образа жизни</h3>
+              <p>
+                Помогаем мягко изменить привычки без стресса, укрепить здоровье и снизить риски
+                хронических заболеваний.
+              </p>
+              <ul>
+                <li>Анализ текущего состояния</li>
+                <li>Пошаговый план изменений</li>
+                <li>Отслеживание прогресса и мотивационная поддержка</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal">
+              <h3>Постоянное сопровождение</h3>
+              <p>
+                Остаёмся с вами после завершения основного курса лечения:
+                следим за динамикой, адаптируем терапию и предотвращаем возможные обострения.
+              </p>
+              <ul>
+                <li>Регулярные консультации</li>
+                <li>Мониторинг ключевых показателей</li>
+                <li>Подробные отчёты и рекомендации по результатам</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="container contact-inner">
+          <div class="contact-text reveal">
+            <h2>Свяжитесь с нами</h2>
+            <p>
+              Расскажите о задаче — и мы предложим концепцию и примерный план работы.
+              Ответим в течение одного рабочего дня.
+            </p>
+          </div>
+
+          <form class="contact-form reveal">
+            <div class="form-row">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+            </div>
+
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="name@company.ru">
+            </div>
+
+            <div class="form-row">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="4" placeholder="Опишите ваш проект или вопрос"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-camel">
+              Отправить заявку
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 Ёbik Corporation. Все права защищены.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
